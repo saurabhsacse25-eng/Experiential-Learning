@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeMaster Dashboard</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, sans-serif;
+    }
+
+    body {
+      background: #eef2f7;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #4f46e5, #06b6d4);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .section-title {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .progress-container {
+      background: #ddd;
+      border-radius: 10px;
+      height: 10px;
+      margin-top: 10px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: green;
+      border-radius: 10px;
+    }
+
+    .deadline {
+      background: white;
+      padding: 10px;
+      margin-top: 10px;
+      border-left: 5px solid red;
+      border-radius: 8px;
+    }
+
+    .video-section {
+      margin-top: 25px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .lecture {
+      background: white;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .lecture:hover {
+      background: #4f46e5;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">CodeMaster Academy</div>
+
+  <div class="container">
+
+    <!-- Courses -->
+    <h2 class="section-title">My Courses</h2>
+    <div class="course-grid">
+
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <div class="progress-container">
+          <div class="progress-bar" style="width:70%"></div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <h3>Python Basics</h3>
+        <div class="progress-container">
+          <div class="progress-bar" style="width:40%"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Deadlines -->
+    <h2 class="section-title">Upcoming Deadlines</h2>
+    <div class="deadline">HTML Assignment - Tomorrow</div>
+    <div class="deadline">CSS Project - 3 Days Left</div>
+
+    <!-- VIDEO SECTION -->
+    <div class="video-section">
+      <h2 class="section-title">Video Lecture</h2>
+      <h3>Lecture: Sample Learning Video</h3>
+
+      <!-- ✅ DIRECT WORKING VIDEO -->
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+
+      <!-- Lecture List -->
+      <div class="lecture">Lecture 1: Introduction</div>
+      <div class="lecture">Lecture 2: Basics</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
